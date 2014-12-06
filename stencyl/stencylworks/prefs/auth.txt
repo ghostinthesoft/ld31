@@ -1,2 +1,2 @@
-global.user=jol
-global.password=a8a991dc0920cf6f280b07bc074d4ae2296ede83
+global.user=ghostinthesoft
+global.password=9ce29d59def3ae44b53dbf6bc59af50c1a36cf9b

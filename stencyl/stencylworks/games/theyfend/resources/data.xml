@@ -1,2 +1,124 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<pack/>
+<pack>
+    <tileset across="1" atlasID="0" desc="" down="1" id="3" name="bg" oid="-1" shared="false" th="32" tw="32">
+        <tile collision="1" data="" durations="100" frames="0" id="0" order="-1"/>
+    </tileset>
+    <custom-block blocktag="custom-8" blocktype="NORMAL" code="" desc="" global="false" gui="Current Category Same As %1" id="8" message="CategorySameAs" name="CategorySameAs" oid="-1" return="BOOLEAN" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="CheckCategory" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="" desc="" global="false" gui="Clear Current Anim Category If Same As %1" id="4" message="ClearAnimCat" name="ClearAnimCat" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="ChkCat" order="1" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-5" blocktype="ACTION" code="" desc="" global="false" gui="Clear Current Animation for %0" id="5" message="ClearCat" name="ClearCat" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <custom-block blocktag="custom-6" blocktype="NORMAL" code="" desc="" global="false" gui="Current Animation Category for %0" id="6" message="GetCat" name="GetCat" oid="-1" return="TEXT" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+    </custom-block>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="24" id="20" name="lettera" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="24" id="0" loop="false" name="idlel" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="idlel" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="13" fixedrot="true" fric="0.2" gid="6" id="19" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="lettera" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="20" static="false">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="1" defaultAnimation="1" desc="" height="24" id="18" name="letterl" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="24" id="0" loop="true" name="idlel" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="24" id="1" loop="true" name="idler" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="24" id="2" loop="true" name="movel" numframes="2" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="movel" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="24" id="3" loop="true" name="mover" numframes="2" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="movel" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="11" fixedrot="true" fric="0.2" gid="7" id="17" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="letterl" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="18" static="false">
+        <snippets>
+            <s enabled="true" id="12">
+                <prop id="1" list="0" val="false"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="24" id="1" name="letterp" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="24" id="0" loop="true" name="idler" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100,100" height="48" id="1" loop="false" name="upr" numframes="4" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="up" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100,100" height="48" id="2" loop="false" name="downr" numframes="4" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100,100" height="48" id="3" loop="false" name="upl" numframes="4" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="up" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100,100" height="48" id="4" loop="false" name="downl" numframes="4" originx="12" originy="12" sync="false" version="2" width="48">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="down" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="24" id="5" loop="true" name="idlel" numframes="1" originx="12" originy="12" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,24,0,24" density="0.1" fric="0.2" gid="-1000" id="0" name="idle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="1" fixedrot="true" fric="0.2" gid="4" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="letterp" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val="0"/>
+                <prop id="2" list="0" val="false"/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="6" fixedrot="true" fric="0.2" gid="5" id="11" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="lettery" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="12" static="false">
+        <snippets>
+            <s enabled="true" id="8">
+                <prop id="1" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="12" id="16" name="letterymid" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="12" id="0" loop="true" name="idle" numframes="1" originx="12" originy="6" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,12,0,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="10" fixedrot="false" fric="0.2" gid="8" id="15" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="letterymid" oid="-1" pausable="true" physicsMode="2" rest="0.0" shared="false" sprite="16" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="7" fixedrot="false" fric="0.2" gid="8" id="13" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="letterytop" oid="-1" pausable="true" physicsMode="2" rest="0.0" shared="false" sprite="14" static="true">
+        <snippets/>
+    </actor>
+    <custom-block blocktag="custom-9" blocktype="ACTION" code="" desc="" global="false" gui="Loop %1 for %0 Using %2" id="9" message="LoopAnim" name="LoopAnim" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Animation" order="1" type="ANIMATION"/>
+        <blank name="Category" order="2" type="TEXT"/>
+    </custom-block>
+    <custom-block blocktag="custom-7" blocktype="ACTION" code="" desc="" global="false" gui="Play %1 Once for %0" id="7" message="PlayOnce" name="PlayOnce" oid="-1" return="VOID" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="ACTOR"/>
+        <blank name="Animation" order="1" type="ANIMATION"/>
+    </custom-block>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="12" id="12" name="y" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="12" id="0" loop="true" name="idle" numframes="1" originx="12" originy="6" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,12,0,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="12" id="14" name="ytop" shared="false" width="24">
+        <anim across="1" down="1" durations="100" height="12" id="0" loop="true" name="idle" numframes="1" originx="12" originy="6" sync="false" version="2" width="24">
+            <poly data="4,0,0,24,0,24,12,0,12" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+</pack>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="-1" id="-1"/>
+        </step>
+    </group>
+    <group eventID="1" id="1">
+        <if comment="false" x="337" y="102">
+            <group eventID="-1" id="-1">
+                <set-xy comment="false" x="348" y="140">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0"/>
+                </set-xy>
+            </group>
+            <less comment="false" id="0" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                </get-xy>
+                <int id="1" val="0"/>
+            </less>
+        </if>
+        <if comment="false" x="337" y="179">
+            <group eventID="-1" id="-1">
+                <set-xy comment="false" x="348" y="222">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </get-wh>
+                    </minus>
+                </set-xy>
+            </group>
+            <more comment="false" id="0" x="0" y="0">
+                <plus comment="false" id="0" x="0" y="0">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-xy>
+                    <get-wh comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="0"/>
+                    </get-wh>
+                </plus>
+                <scene-wh comment="false" id="1" x="0" y="0">
+                    <int id="0" val="0"/>
+                </scene-wh>
+            </more>
+        </if>
+    </group>
+    <group eventID="1" id="2">
+        <if comment="false" x="103" y="387">
+            <group eventID="-1" id="-1">
+                <set-xy comment="false" x="114" y="425">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <int id="2" val="0"/>
+                </set-xy>
+            </group>
+            <less comment="false" id="0" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                </get-xy>
+                <int id="1" val="0"/>
+            </less>
+        </if>
+        <comment-short comment="false" x="103" y="464">
+            <int id="0" val="Use scene, not screen"/>
+        </comment-short>
+    </group>
+    <group eventID="1" id="4">
+        <if comment="false" x="119" y="595">
+            <group eventID="-1" id="-1">
+                <set-xy comment="false" x="130" y="638">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </scene-wh>
+                        <get-wh comment="false" id="1" x="0" y="0">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                        </get-wh>
+                    </minus>
+                </set-xy>
+            </group>
+            <more comment="false" id="0" x="0" y="0">
+                <plus comment="false" id="0" x="0" y="0">
+                    <get-xy comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-xy>
+                    <get-wh comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="this" id="0"/>
+                        <int id="1" val="1"/>
+                    </get-wh>
+                </plus>
+                <scene-wh comment="false" id="1" x="0" y="0">
+                    <int id="0" val="1"/>
+                </scene-wh>
+            </more>
+        </if>
+    </group>
+    <group eventID="1" id="-1"/>
+</groups>
