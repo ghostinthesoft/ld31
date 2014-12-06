@@ -1,0 +1,2 @@
+global.user=jol
+global.password=a8a991dc0920cf6f280b07bc074d4ae2296ede83

@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <keymap active="false" name="Default">
+        <action id="Backspace">
+            <keyboard-shortcut first-keystroke="BACK_SPACE"/>
+        </action>
+        <action id="Block Comments">
+            <keyboard-shortcut first-keystroke="shift control SLASH"/>
+        </action>
+        <action id="Clipboard Copy">
+            <keyboard-shortcut first-keystroke="control C"/>
+            <keyboard-shortcut first-keystroke="control INSERT"/>
+        </action>
+        <action id="Clipboard Cut">
+            <keyboard-shortcut first-keystroke="control X"/>
+            <keyboard-shortcut first-keystroke="shift DELETE"/>
+        </action>
+        <action id="Clipboard Paste">
+            <keyboard-shortcut first-keystroke="control V"/>
+            <keyboard-shortcut first-keystroke="shift INSERT"/>
+        </action>
+        <action id="Clipboard Paste with Dialog">
+            <keyboard-shortcut first-keystroke="shift control V"/>
+            <keyboard-shortcut first-keystroke="shift control INSERT"/>
+        </action>
+        <action id="Collapse All">
+            <keyboard-shortcut first-keystroke="shift control MINUS"/>
+        </action>
+        <action id="Collapse Folding">
+            <keyboard-shortcut first-keystroke="control MINUS"/>
+        </action>
+        <action id="Delete">
+            <keyboard-shortcut first-keystroke="DELETE"/>
+        </action>
+        <action id="Delete Current Line">
+            <keyboard-shortcut first-keystroke="control Y"/>
+        </action>
+        <action id="Delete to Word End">
+            <keyboard-shortcut first-keystroke="control DELETE"/>
+        </action>
+        <action id="Delete to Word Start">
+            <keyboard-shortcut first-keystroke="control BACK_SPACE"/>
+        </action>
+        <action id="Duplication Selection">
+            <keyboard-shortcut first-keystroke="control D"/>
+        </action>
+        <action id="Escape">
+            <keyboard-shortcut first-keystroke="ESCAPE"/>
+        </action>
+        <action id="Expand All">
+            <keyboard-shortcut first-keystroke="shift control EQUALS"/>
+        </action>
+        <action id="Expand Folding">
+            <keyboard-shortcut first-keystroke="control EQUALS"/>
+        </action>
+        <action id="Find">
+            <keyboard-shortcut first-keystroke="control F"/>
+        </action>
+        <action id="Find Next Occurrence">
+            <keyboard-shortcut first-keystroke="F3"/>
+        </action>
+        <action id="Find Previous Occurrence">
+            <keyboard-shortcut first-keystroke="shift F3"/>
+        </action>
+        <action id="Fold Selection">
+            <keyboard-shortcut first-keystroke="control PERIOD"/>
+        </action>
+        <action id="Goto Line">
+            <keyboard-shortcut first-keystroke="control G"/>
+        </action>
+        <action id="Indent Selection">
+            <keyboard-shortcut first-keystroke="TAB"/>
+        </action>
+        <action id="Insert Line Break">
+            <keyboard-shortcut first-keystroke="ENTER"/>
+        </action>
+        <action id="Join Lines">
+            <keyboard-shortcut first-keystroke="shift control J"/>
+        </action>
+        <action id="Line Comments">
+            <keyboard-shortcut first-keystroke="control SLASH"/>
+        </action>
+        <action id="Move Caret to Document End">
+            <keyboard-shortcut first-keystroke="control END"/>
+        </action>
+        <action id="Move Caret to Document Start">
+            <keyboard-shortcut first-keystroke="control HOME"/>
+        </action>
+        <action id="Move Caret to Line End">
+            <keyboard-shortcut first-keystroke="END"/>
+        </action>
+        <action id="Move Caret to Line Start">
+            <keyboard-shortcut first-keystroke="HOME"/>
+        </action>
+        <action id="Move Caret to Next Char">
+            <keyboard-shortcut first-keystroke="RIGHT"/>
+        </action>
+        <action id="Move Caret to Next Line">
+            <keyboard-shortcut first-keystroke="DOWN"/>
+        </action>
+        <action id="Move Caret to Next Word">
+            <keyboard-shortcut first-keystroke="control RIGHT"/>
+        </action>
+        <action id="Move Caret to Previous Char">
+            <keyboard-shortcut first-keystroke="LEFT"/>
+        </action>
+        <action id="Move Caret to Previous Line">
+            <keyboard-shortcut first-keystroke="UP"/>
+        </action>
+        <action id="Move Caret to Previous Word">
+            <keyboard-shortcut first-keystroke="control LEFT"/>
+        </action>
+        <action id="Page Down">
+            <keyboard-shortcut first-keystroke="PAGE_DOWN"/>
+        </action>
+        <action id="Page Up">
+            <keyboard-shortcut first-keystroke="PAGE_UP"/>
+        </action>
+        <action id="Quick Search">
+            <keyboard-shortcut first-keystroke="alt F3"/>
+        </action>
+        <action id="Redo">
+            <keyboard-shortcut first-keystroke="shift control Z"/>
+        </action>
+        <action id="Replace">
+            <keyboard-shortcut first-keystroke="control R"/>
+        </action>
+        <action id="Select All">
+            <keyboard-shortcut first-keystroke="control A"/>
+        </action>
+        <action id="Select Next Char">
+            <keyboard-shortcut first-keystroke="shift RIGHT"/>
+        </action>
+        <action id="Select Next Line">
+            <keyboard-shortcut first-keystroke="shift DOWN"/>
+        </action>
+        <action id="Select Next Word">
+            <keyboard-shortcut first-keystroke="shift control RIGHT"/>
+        </action>
+        <action id="Select Previous Char">
+            <keyboard-shortcut first-keystroke="shift LEFT"/>
+        </action>
+        <action id="Select Previous Line">
+            <keyboard-shortcut first-keystroke="shift UP"/>
+        </action>
+        <action id="Select Previous Word">
+            <keyboard-shortcut first-keystroke="shift control LEFT"/>
+        </action>
+        <action id="Select Word at Caret">
+            <keyboard-shortcut first-keystroke="control W"/>
+        </action>
+        <action id="Select to Document End">
+            <keyboard-shortcut first-keystroke="shift control END"/>
+        </action>
+        <action id="Select to Document Start">
+            <keyboard-shortcut first-keystroke="shift control HOME"/>
+        </action>
+        <action id="Select to Line End">
+            <keyboard-shortcut first-keystroke="shift END"/>
+        </action>
+        <action id="Select to Line Start">
+            <keyboard-shortcut first-keystroke="shift HOME"/>
+        </action>
+        <action id="Select to Matching Bracket">
+            <keyboard-shortcut first-keystroke="control B"/>
+        </action>
+        <action id="Select to Next Page">
+            <keyboard-shortcut first-keystroke="shift PAGE_DOWN"/>
+        </action>
+        <action id="Select to Previous Page">
+            <keyboard-shortcut first-keystroke="shift PAGE_UP"/>
+        </action>
+        <action id="Split Line">
+            <keyboard-shortcut first-keystroke="control ENTER"/>
+        </action>
+        <action id="Start New Line">
+            <keyboard-shortcut first-keystroke="shift ENTER"/>
+        </action>
+        <action id="Toggle Case">
+            <keyboard-shortcut first-keystroke="shift control U"/>
+        </action>
+        <action id="Toggle Insert/Overwrite">
+            <keyboard-shortcut first-keystroke="INSERT"/>
+        </action>
+        <action id="Toggle Rectangular Selection">
+            <keyboard-shortcut first-keystroke="control BACK_SLASH"/>
+            <keyboard-shortcut first-keystroke="shift alt INSERT"/>
+        </action>
+        <action id="Undo">
+            <keyboard-shortcut first-keystroke="control Z"/>
+        </action>
+        <action id="Unindent Selection">
+            <keyboard-shortcut first-keystroke="shift TAB"/>
+        </action>
+    </keymap>
+    <keymap active="true" name="MacOSX" parent="Default">
+        <action id="Block Comments">
+            <keyboard-shortcut first-keystroke="shift meta SLASH"/>
+        </action>
+        <action id="Clipboard Copy">
+            <keyboard-shortcut first-keystroke="meta C"/>
+            <keyboard-shortcut first-keystroke="meta INSERT"/>
+        </action>
+        <action id="Clipboard Cut">
+            <keyboard-shortcut first-keystroke="shift DELETE"/>
+            <keyboard-shortcut first-keystroke="meta X"/>
+        </action>
+        <action id="Clipboard Paste">
+            <keyboard-shortcut first-keystroke="shift INSERT"/>
+            <keyboard-shortcut first-keystroke="meta V"/>
+        </action>
+        <action id="Clipboard Paste with Dialog">
+            <keyboard-shortcut first-keystroke="shift meta V"/>
+            <keyboard-shortcut first-keystroke="shift meta INSERT"/>
+        </action>
+        <action id="Collapse All">
+            <keyboard-shortcut first-keystroke="shift meta MINUS"/>
+        </action>
+        <action id="Collapse Folding">
+            <keyboard-shortcut first-keystroke="meta MINUS"/>
+        </action>
+        <action id="Delete Current Line">
+            <keyboard-shortcut first-keystroke="meta Y"/>
+        </action>
+        <action id="Delete to Word End">
+            <keyboard-shortcut first-keystroke="meta DELETE"/>
+        </action>
+        <action id="Delete to Word Start">
+            <keyboard-shortcut first-keystroke="meta BACK_SPACE"/>
+        </action>
+        <action id="Duplication Selection">
+            <keyboard-shortcut first-keystroke="meta D"/>
+        </action>
+        <action id="Expand All">
+            <keyboard-shortcut first-keystroke="shift meta EQUALS"/>
+        </action>
+        <action id="Expand Folding">
+            <keyboard-shortcut first-keystroke="meta EQUALS"/>
+        </action>
+        <action id="Find">
+            <keyboard-shortcut first-keystroke="meta F"/>
+        </action>
+        <action id="Fold Selection">
+            <keyboard-shortcut first-keystroke="meta PERIOD"/>
+        </action>
+        <action id="Goto Line">
+            <keyboard-shortcut first-keystroke="meta G"/>
+        </action>
+        <action id="Join Lines">
+            <keyboard-shortcut first-keystroke="shift meta J"/>
+        </action>
+        <action id="Line Comments">
+            <keyboard-shortcut first-keystroke="meta SLASH"/>
+        </action>
+        <action id="Move Caret to Document End">
+            <keyboard-shortcut first-keystroke="meta END"/>
+        </action>
+        <action id="Move Caret to Document Start">
+            <keyboard-shortcut first-keystroke="meta HOME"/>
+        </action>
+        <action id="Move Caret to Next Word">
+            <keyboard-shortcut first-keystroke="meta RIGHT"/>
+        </action>
+        <action id="Move Caret to Previous Word">
+            <keyboard-shortcut first-keystroke="meta LEFT"/>
+        </action>
+        <action id="Redo">
+            <keyboard-shortcut first-keystroke="shift meta Z"/>
+        </action>
+        <action id="Replace">
+            <keyboard-shortcut first-keystroke="meta R"/>
+        </action>
+        <action id="Select All">
+            <keyboard-shortcut first-keystroke="meta A"/>
+        </action>
+        <action id="Select Next Word">
+            <keyboard-shortcut first-keystroke="shift meta RIGHT"/>
+        </action>
+        <action id="Select Previous Word">
+            <keyboard-shortcut first-keystroke="shift meta LEFT"/>
+        </action>
+        <action id="Select Word at Caret">
+            <keyboard-shortcut first-keystroke="meta W"/>
+        </action>
+        <action id="Select to Document End">
+            <keyboard-shortcut first-keystroke="shift meta END"/>
+        </action>
+        <action id="Select to Document Start">
+            <keyboard-shortcut first-keystroke="shift meta HOME"/>
+        </action>
+        <action id="Select to Matching Bracket">
+            <keyboard-shortcut first-keystroke="meta B"/>
+        </action>
+        <action id="Split Line">
+            <keyboard-shortcut first-keystroke="meta ENTER"/>
+        </action>
+        <action id="Toggle Case">
+            <keyboard-shortcut first-keystroke="shift meta U"/>
+        </action>
+        <action id="Toggle Rectangular Selection">
+            <keyboard-shortcut first-keystroke="shift alt INSERT"/>
+            <keyboard-shortcut first-keystroke="meta BACK_SLASH"/>
+        </action>
+        <action id="Undo">
+            <keyboard-shortcut first-keystroke="meta Z"/>
+        </action>
+    </keymap>
+</component>
