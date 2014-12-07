@@ -3,16 +3,21 @@
     <group eventID="1" id="0">
         <init comment="false" x="15" y="15">
             <group eventID="1" id="-1">
-                <setanim comment="false" x="26" y="40">
+                <set-fric-bounce comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="0.01"/>
+                </set-fric-bounce>
+                <setanim comment="false" x="26" y="67">
                     <ACTOR eid="this" id="0"/>
                     <string-to-anim comment="false" id="1" x="0" y="0">
                         <int id="0" val="idler"/>
                     </string-to-anim>
                 </setanim>
-                <set-val-12-1 comment="false" x="26" y="72">
+                <set-val-12-1 comment="false" x="26" y="99">
                     <true comment="false" id="0" x="0" y="0"/>
                 </set-val-12-1>
-                <set-val-12-2 comment="false" x="26" y="97">
+                <set-val-12-2 comment="false" x="26" y="124">
                     <int id="0" val="1"/>
                 </set-val-12-2>
             </group>
@@ -415,9 +420,12 @@
                             <ACTOR eid="this" id="0"/>
                             <int id="1" val="0"/>
                             <minus comment="false" id="2" x="0" y="0">
-                                <scene-wh comment="false" id="0" x="0" y="0">
-                                    <int id="0" val="0"/>
-                                </scene-wh>
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <scene-wh comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                    </scene-wh>
+                                    <int id="1" val="16"/>
+                                </minus>
                                 <get-wh comment="false" id="1" x="0" y="0">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="0"/>
@@ -436,77 +444,16 @@
                                 <int id="1" val="0"/>
                             </get-wh>
                         </plus>
-                        <scene-wh comment="false" id="1" x="0" y="0">
-                            <int id="0" val="0"/>
-                        </scene-wh>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="16"/>
+                        </minus>
                     </more>
                 </if>
             </group>
         </step>
-    </group>
-    <group eventID="4" id="1">
-        <set-val-12-17 comment="false" x="689" y="314">
-            <scene-get-attribute comment="false" id="0" x="0" y="0">
-                <int id="0" val="main"/>
-                <int id="1" val="_letterp"/>
-            </scene-get-attribute>
-        </set-val-12-17>
-        <set-val-12-7 comment="false" x="689" y="346">
-            <minus comment="false" id="0" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="var" id="0" vid="17"/>
-                    <int id="1" val="2"/>
-                </get-xy>
-                <get-xy comment="false" id="1" x="0" y="0">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="2"/>
-                </get-xy>
-            </minus>
-        </set-val-12-7>
-        <set-val-12-9 comment="false" x="689" y="384">
-            <minus comment="false" id="0" x="0" y="0">
-                <get-xy comment="false" id="0" x="0" y="0">
-                    <ACTOR eid="var" id="0" vid="17"/>
-                    <int id="1" val="3"/>
-                </get-xy>
-                <get-xy comment="false" id="1" x="0" y="0">
-                    <ACTOR eid="this" id="0"/>
-                    <int id="1" val="3"/>
-                </get-xy>
-            </minus>
-        </set-val-12-9>
-        <set-val-12-7 comment="false" x="689" y="422">
-            <times comment="false" id="0" x="0" y="0">
-                <get-val-12-7 comment="false" id="0" x="0" y="0"/>
-                <get-val-12-7 comment="false" id="1" x="0" y="0"/>
-            </times>
-        </set-val-12-7>
-        <set-val-12-9 comment="false" x="689" y="452">
-            <times comment="false" id="0" x="0" y="0">
-                <get-val-12-9 comment="false" id="0" x="0" y="0"/>
-                <get-val-12-9 comment="false" id="1" x="0" y="0"/>
-            </times>
-        </set-val-12-9>
-        <set-val-12-10 comment="false" x="689" y="482">
-            <plus comment="false" id="0" x="0" y="0">
-                <get-val-12-7 comment="false" id="0" x="0" y="0"/>
-                <get-val-12-9 comment="false" id="1" x="0" y="0"/>
-            </plus>
-        </set-val-12-10>
-        <if comment="false" x="689" y="512">
-            <group eventID="2" id="-1">
-                <set-val-12-21 comment="false" x="700" y="542">
-                    <get-val-12-10 comment="false" id="0" x="0" y="0"/>
-                </set-val-12-21>
-                <set-val-12-22 comment="false" x="700" y="567">
-                    <int id="0" val="1"/>
-                </set-val-12-22>
-            </group>
-            <less comment="false" id="0" x="0" y="0">
-                <get-val-12-10 comment="false" id="0" x="0" y="0"/>
-                <get-val-12-21 comment="false" id="1" x="0" y="0"/>
-            </less>
-        </if>
     </group>
     <group eventID="4" id="-1"/>
 </groups>

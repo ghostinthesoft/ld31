@@ -62,39 +62,33 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_8_8_controly extends ActorScript
+class Design_23_23_panel extends ActorScript
 {          	
 	
-public var _top:Actor;
+public var _originalx:Float;
+
+public var _originaly:Float;
+
+public var _opened:Bool;
 
 public var _tmp:Float;
 
-public var _offsety:Float;
-
-public var _pressed:Bool;
-
-public var _mid:Actor;
-    
-/* ========================= Custom Event ========================= */
-public function _customEvent_input_start():Void
-{
-        _pressed = true;
-propertyChanged("_pressed", _pressed);
-}
-
+public var _opening:Bool;
 
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		nameMap.set("top", "_top");
+		nameMap.set("originalx", "_originalx");
+_originalx = 0;
+nameMap.set("originaly", "_originaly");
+_originaly = 0;
+nameMap.set("opened", "_opened");
+_opened = true;
 nameMap.set("tmp", "_tmp");
-_tmp = 0.0;
-nameMap.set("offsety", "_offsety");
-_offsety = 0.0;
-nameMap.set("pressed", "_pressed");
-_pressed = false;
-nameMap.set("mid", "_mid");
+_tmp = 0;
+nameMap.set("opening", "_opening");
+_opening = true;
 nameMap.set("Actor", "actor");
 
 	}
@@ -103,59 +97,51 @@ nameMap.set("Actor", "actor");
 	{
 		    
 /* ======================== When Creating ========================= */
-        createRecycledActor(getActorType(13), -100, -100, Script.FRONT);
-        _top = getLastCreatedActor();
-propertyChanged("_top", _top);
-        createRecycledActor(getActorType(15), -100, -100, Script.FRONT);
-        _mid = getLastCreatedActor();
-propertyChanged("_mid", _mid);
-        _pressed = false;
-propertyChanged("_pressed", _pressed);
-        _offsety = asNumber(0);
-propertyChanged("_offsety", _offsety);
-    
-/* ============================ Click ============================= */
-addMouseReleasedListener(function(list:Array<Dynamic>):Void {
-if(wrapper.enabled){
-        _pressed = false;
-propertyChanged("_pressed", _pressed);
-}
-});
+        actor.makeAlwaysSimulate();
+        _originalx = asNumber(actor.getX());
+propertyChanged("_originalx", _originalx);
+        _originaly = asNumber(actor.getY());
+propertyChanged("_originaly", _originaly);
     
 /* ======================== When Updating ========================= */
 addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void {
 if(wrapper.enabled){
-        if(_pressed)
+        if(_opened)
 {
-            if((_offsety < 350))
+            if(!(_opening))
 {
-                _offsety = asNumber((_offsety + (elapsedTime * 0.15)));
-propertyChanged("_offsety", _offsety);
+                _opening = true;
+propertyChanged("_opening", _opening);
+                actor.moveTo(_originalx, _originaly, 1, Expo.easeOut);
 }
 
 }
 
         else
 {
-            _offsety = asNumber((_offsety - (elapsedTime * 0.25)));
-propertyChanged("_offsety", _offsety);
-            if((_offsety < 0))
+            if(_opening)
 {
-                _offsety = asNumber(0);
-propertyChanged("_offsety", _offsety);
+                _opening = false;
+propertyChanged("_opening", _opening);
+                if((_originalx == 0))
+{
+                    actor.moveTo(-212, _originaly, 1, Expo.easeOut);
+}
+
+                else if((_originaly == 0))
+{
+                    actor.moveTo(_originalx, -164, 1, Expo.easeOut);
+}
+
+                else
+{
+                    actor.moveTo(788, _originaly, 1, Expo.easeOut);
 }
 
 }
 
-        _top.setX(actor.getX());
-        _top.setY(((actor.getYCenter() - 12) - _offsety));
-        _mid.setX(actor.getX());
-        _tmp = asNumber((_offsety + 0));
-propertyChanged("_tmp", _tmp);
-        _mid.setY((actor.getYCenter() - (12 + (0.5 * _tmp))));
-        _tmp = asNumber((_tmp / 24));
-propertyChanged("_tmp", _tmp);
-        _mid.realScaleY = _tmp;
+}
+
 }
 });
 

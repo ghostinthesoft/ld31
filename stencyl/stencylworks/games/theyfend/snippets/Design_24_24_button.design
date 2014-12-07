@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <custom-code comment="false" x="26" y="40">
+                    <int id="0" val="import flash.ui.MouseCursor;"/>
+                </custom-code>
+            </group>
+        </init>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <custom-code comment="false" x="26" y="42">
+                    <int id="0" val="Mouse.cursor = MouseCursor.BUTTON;"/>
+                </custom-code>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="0"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <custom-code comment="false" x="26" y="42">
+                    <int id="0" val="Mouse.cursor = MouseCursor.AUTO;"/>
+                </custom-code>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="1"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="3" id="1">
+        <do-on-platform comment="false" x="159" y="173">
+            <group eventID="3" id="-1"/>
+            <int id="0" val="0"/>
+        </do-on-platform>
+    </group>
+    <group eventID="3" id="-1"/>
+</groups>

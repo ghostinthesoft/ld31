@@ -3,10 +3,13 @@
     <group eventID="1" id="0">
         <init comment="false" x="141" y="10">
             <group eventID="1" id="-1">
-                <set-val-9-5 comment="false" x="152" y="35">
+                <debug-draw comment="false" x="152" y="35">
+                    <int id="0" val="1"/>
+                </debug-draw>
+                <set-val-9-5 comment="false" x="152" y="62">
                     <int id="0" val="0"/>
                 </set-val-9-5>
-                <set-val-9-1 comment="false" x="152" y="55">
+                <set-val-9-1 comment="false" x="152" y="82">
                     <times comment="false" id="0" x="0" y="0">
                         <int id="0" val="0.5"/>
                         <scene-wh comment="false" id="1" x="0" y="0">
@@ -14,24 +17,38 @@
                         </scene-wh>
                     </times>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="152" y="93">
-                    <times comment="false" id="0" x="0" y="0">
-                        <int id="0" val="0.5"/>
-                        <scene-wh comment="false" id="1" x="0" y="0">
+                <set-val-9-2 comment="false" x="152" y="120">
+                    <int id="0" val="260"/>
+                </set-val-9-2>
+                <create-region comment="false" x="152" y="140">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="60"/>
+                    </minus>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
                             <int id="0" val="1"/>
                         </scene-wh>
-                    </times>
-                </set-val-9-2>
-                <create-actor3 comment="false" x="152" y="131">
+                        <int id="1" val="64"/>
+                    </minus>
+                    <int id="2" val="60"/>
+                    <int id="3" val="64"/>
+                </create-region>
+                <set-val-9-23 comment="false" x="152" y="178">
+                    <REGION eid="lastcreated" id="0"/>
+                </set-val-9-23>
+                <create-actor3 comment="false" x="152" y="205">
                     <ACTORTYPE eid="24" id="0"/>
-                    <int id="1" val="660"/>
+                    <int id="1" val="600"/>
                     <int id="2" val="60"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-15 comment="false" x="152" y="158">
+                <set-val-9-15 comment="false" x="152" y="232">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-15>
-                <create-actor3 comment="false" x="152" y="185">
+                <create-actor3 comment="false" x="152" y="259">
                     <ACTORTYPE eid="26" id="0"/>
                     <minus comment="false" id="1" x="0" y="0">
                         <times comment="false" id="0" x="0" y="0">
@@ -40,7 +57,7 @@
                                 <int id="0" val="0"/>
                             </scene-wh>
                         </times>
-                        <int id="1" val="350"/>
+                        <int id="1" val="320"/>
                     </minus>
                     <minus comment="false" id="2" x="0" y="0">
                         <scene-wh comment="false" id="0" x="0" y="0">
@@ -50,10 +67,10 @@
                     </minus>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-16 comment="false" x="152" y="235">
+                <set-val-9-16 comment="false" x="152" y="309">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-16>
-                <create-actor3 comment="false" x="152" y="262">
+                <create-actor3 comment="false" x="152" y="336">
                     <ACTORTYPE eid="26" id="0"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <times comment="false" id="0" x="0" y="0">
@@ -62,7 +79,7 @@
                                 <int id="0" val="0"/>
                             </scene-wh>
                         </times>
-                        <int id="1" val="200"/>
+                        <int id="1" val="160"/>
                     </plus>
                     <minus comment="false" id="2" x="0" y="0">
                         <scene-wh comment="false" id="0" x="0" y="0">
@@ -72,10 +89,10 @@
                     </minus>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-17 comment="false" x="152" y="312">
+                <set-val-9-17 comment="false" x="152" y="386">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-17>
-                <create-actor3 comment="false" x="152" y="339">
+                <create-actor3 comment="false" x="152" y="413">
                     <ACTORTYPE eid="0" id="0"/>
                     <minus comment="false" id="1" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
@@ -87,10 +104,10 @@
                     <get-val-9-2 comment="false" id="2" x="0" y="0"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-3 comment="false" x="152" y="376">
+                <set-val-9-3 comment="false" x="152" y="450">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-3>
-                <create-actor3 comment="false" x="152" y="403">
+                <create-actor3 comment="false" x="152" y="477">
                     <ACTORTYPE eid="19" id="0"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
@@ -102,10 +119,10 @@
                     <get-val-9-2 comment="false" id="2" x="0" y="0"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-12 comment="false" x="152" y="440">
+                <set-val-9-12 comment="false" x="152" y="514">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-12>
-                <create-actor3 comment="false" x="152" y="467">
+                <create-actor3 comment="false" x="152" y="541">
                     <ACTORTYPE eid="11" id="0"/>
                     <plus comment="false" id="1" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
@@ -117,10 +134,10 @@
                     <get-val-9-2 comment="false" id="2" x="0" y="0"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-4 comment="false" x="152" y="504">
+                <set-val-9-4 comment="false" x="152" y="578">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-4>
-                <create-actor3 comment="false" x="152" y="531">
+                <create-actor3 comment="false" x="152" y="605">
                     <ACTORTYPE eid="17" id="0"/>
                     <minus comment="false" id="1" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
@@ -132,27 +149,312 @@
                     <get-val-9-2 comment="false" id="2" x="0" y="0"/>
                     <int id="3" val="0"/>
                 </create-actor3>
-                <set-val-9-11 comment="false" x="152" y="568">
+                <set-val-9-11 comment="false" x="152" y="642">
                     <ACTOR eid="lastcreated" id="0"/>
                 </set-val-9-11>
+                <create-actor3 comment="false" x="152" y="669">
+                    <ACTORTYPE eid="28" id="0"/>
+                    <int id="1" val="0"/>
+                    <int id="2" val="96"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-9-24 comment="false" x="152" y="696">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-9-24>
+                <create-actor3 comment="false" x="152" y="723">
+                    <ACTORTYPE eid="30" id="0"/>
+                    <int id="1" val="192"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-9-25 comment="false" x="152" y="750">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-9-25>
+                <create-actor3 comment="false" x="152" y="777">
+                    <ACTORTYPE eid="32" id="0"/>
+                    <int id="1" val="288"/>
+                    <int id="2" val="0"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-9-26 comment="false" x="152" y="804">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-9-26>
+                <create-actor3 comment="false" x="152" y="831">
+                    <ACTORTYPE eid="34" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="512"/>
+                    </minus>
+                    <int id="2" val="168"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-val-9-27 comment="false" x="152" y="876">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </set-val-9-27>
+                <set-opacity comment="false" x="152" y="903">
+                    <ACTOR eid="var" id="0" vid="3"/>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <set-opacity comment="false" x="152" y="930">
+                    <ACTOR eid="var" id="0" vid="11"/>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <set-opacity comment="false" x="152" y="957">
+                    <ACTOR eid="var" id="0" vid="12"/>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <set-opacity comment="false" x="152" y="984">
+                    <ACTOR eid="var" id="0" vid="4"/>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <set-opacity comment="false" x="152" y="1011">
+                    <get-attribute comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="4"/>
+                        <int id="1" val="controly"/>
+                        <int id="2" val="_mid"/>
+                    </get-attribute>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <set-opacity comment="false" x="152" y="1051">
+                    <get-attribute comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="4"/>
+                        <int id="1" val="controly"/>
+                        <int id="2" val="_top"/>
+                    </get-attribute>
+                    <int id="1" val="0"/>
+                </set-opacity>
+                <create-actor3 comment="false" x="152" y="1091">
+                    <ACTORTYPE eid="36" id="0"/>
+                    <minus comment="false" id="1" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                        </scene-wh>
+                        <int id="1" val="64"/>
+                    </minus>
+                    <minus comment="false" id="2" x="0" y="0">
+                        <scene-wh comment="false" id="0" x="0" y="0">
+                            <int id="0" val="1"/>
+                        </scene-wh>
+                        <int id="1" val="64"/>
+                    </minus>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <setanim comment="false" x="152" y="1136">
+                    <ACTOR eid="var" id="0" vid="17"/>
+                    <string-to-anim comment="false" id="1" x="0" y="0">
+                        <int id="0" val="up"/>
+                    </string-to-anim>
+                </setanim>
+                <if comment="false" x="152" y="1168">
+                    <group eventID="1" id="-1">
+                        <set-val-9-29 comment="false" x="163" y="1193">
+                            <int id="0" val="4"/>
+                        </set-val-9-29>
+                        <set-game-val-0 comment="false" x="163" y="1213">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-game-val-0>
+                    </group>
+                    <get-game-val-0 comment="false" id="0" x="0" y="0"/>
+                </if>
+                <else comment="false" x="152" y="1245">
+                    <group eventID="1" id="-1">
+                        <set-val-9-29 comment="false" x="163" y="1265">
+                            <int id="0" val="1"/>
+                        </set-val-9-29>
+                    </group>
+                </else>
+                <dolater comment="false" x="152" y="1297">
+                    <group eventID="1" id="-1">
+                        <fadeInOut comment="false" x="163" y="1334">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <set-attribute comment="false" x="163" y="1361">
+                            <ACTOR eid="var" id="0" vid="24"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-9-29 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0"/>
+                    </plus>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="152" y="1405">
+                    <group eventID="1" id="-1">
+                        <fadeInOut comment="false" x="163" y="1442">
+                            <ACTOR eid="var" id="0" vid="11"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <set-attribute comment="false" x="163" y="1469">
+                            <ACTOR eid="var" id="0" vid="25"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-9-29 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.2"/>
+                    </plus>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="152" y="1513">
+                    <group eventID="1" id="-1">
+                        <fadeInOut comment="false" x="163" y="1550">
+                            <ACTOR eid="var" id="0" vid="12"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <set-attribute comment="false" x="163" y="1577">
+                            <ACTOR eid="var" id="0" vid="26"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                    </group>
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-9-29 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.4"/>
+                    </plus>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
+                <dolater comment="false" x="152" y="1621">
+                    <group eventID="1" id="-1">
+                        <fadeInOut comment="false" x="163" y="1658">
+                            <ACTOR eid="var" id="0" vid="4"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="163" y="1685">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <int id="1" val="controly"/>
+                                <int id="2" val="_mid"/>
+                            </get-attribute>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="163" y="1725">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <int id="1" val="controly"/>
+                                <int id="2" val="_top"/>
+                            </get-attribute>
+                            <int id="1" val="0"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="8"/>
+                        </fadeInOut>
+                        <set-attribute comment="false" x="163" y="1765">
+                            <ACTOR eid="var" id="0" vid="27"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <set-val-9-28 comment="false" x="163" y="1797">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-28>
+                    </group>
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-9-29 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="0.6"/>
+                    </plus>
+                    <ACTOR eid="lastcreated" id="2"/>
+                </dolater>
             </group>
         </init>
     </group>
-    <group eventID="1" id="1">
-        <setanim comment="false" x="173" y="696">
-            <ACTOR eid="var" id="0" vid="17"/>
-            <string-to-anim comment="false" id="1" x="0" y="0">
-                <int id="0" val="up"/>
-            </string-to-anim>
-        </setanim>
+    <group eventID="1" id="-1">
+        <get-game-att comment="false" x="617" y="655">
+            <int id="0" val=""/>
+        </get-game-att>
     </group>
-    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
-        <event-mouse-press-release comment="false" x="50" y="37">
+        <event-mouse-press-release comment="false" x="30" y="20">
             <group eventID="2" id="-1">
-                <if comment="false" x="61" y="64">
+                <set-val-9-1 comment="false" x="41" y="47">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="0"/>
+                        </mousexy>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </scene-wh>
+                            <int id="1" val="32"/>
+                        </minus>
+                    </minus>
+                </set-val-9-1>
+                <set-val-9-2 comment="false" x="41" y="90">
+                    <minus comment="false" id="0" x="0" y="0">
+                        <mousexy comment="false" id="0" x="0" y="0">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                        </mousexy>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <scene-wh comment="false" id="0" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </scene-wh>
+                            <int id="1" val="32"/>
+                        </minus>
+                    </minus>
+                </set-val-9-2>
+                <set-val-9-1 comment="false" x="41" y="133">
+                    <times comment="false" id="0" x="0" y="0">
+                        <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-9-1 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                </set-val-9-1>
+                <set-val-9-2 comment="false" x="41" y="163">
+                    <times comment="false" id="0" x="0" y="0">
+                        <get-val-9-2 comment="false" id="0" x="0" y="0"/>
+                        <get-val-9-2 comment="false" id="1" x="0" y="0"/>
+                    </times>
+                </set-val-9-2>
+                <set-val-9-7 comment="false" x="41" y="193">
+                    <plus comment="false" id="0" x="0" y="0">
+                        <get-val-9-1 comment="false" id="0" x="0" y="0"/>
+                        <get-val-9-2 comment="false" id="1" x="0" y="0"/>
+                    </plus>
+                </set-val-9-7>
+                <if comment="false" x="41" y="223">
                     <group eventID="2" id="-1">
-                        <set-val-9-1 comment="false" x="72" y="94">
+                        <scene-reload-new comment="false" x="52" y="253">
+                            <int id="0" val="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                            <int id="3" val="1"/>
+                        </scene-reload-new>
+                        <stop comment="false" x="52" y="280"/>
+                    </group>
+                    <less comment="false" id="0" x="0" y="0">
+                        <get-val-9-7 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="1024"/>
+                    </less>
+                </if>
+                <if comment="false" x="41" y="312">
+                    <group eventID="2" id="-1">
+                        <stop comment="false" x="52" y="342"/>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-9-28 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+                <if comment="false" x="41" y="374">
+                    <group eventID="2" id="-1">
+                        <set-val-9-1 comment="false" x="52" y="404">
                             <abs comment="false" id="0" x="0" y="0">
                                 <minus comment="false" id="0" x="0" y="0">
                                     <mousexy comment="false" id="0" x="0" y="0">
@@ -168,7 +470,7 @@
                                 </minus>
                             </abs>
                         </set-val-9-1>
-                        <set-val-9-2 comment="false" x="72" y="142">
+                        <set-val-9-2 comment="false" x="52" y="452">
                             <abs comment="false" id="0" x="0" y="0">
                                 <minus comment="false" id="0" x="0" y="0">
                                     <mousexy comment="false" id="0" x="0" y="0">
@@ -182,63 +484,63 @@
                                 </minus>
                             </abs>
                         </set-val-9-2>
-                        <if comment="false" x="72" y="185">
+                        <if comment="false" x="52" y="495">
                             <group eventID="2" id="-1">
-                                <set-val-9-18 comment="false" x="83" y="220">
+                                <set-val-9-18 comment="false" x="63" y="530">
                                     <true comment="false" id="0" x="0" y="0"/>
                                 </set-val-9-18>
-                                <toggle-grav comment="false" x="83" y="245">
+                                <toggle-grav comment="false" x="63" y="555">
                                     <ACTOR eid="var" id="0" vid="3"/>
                                     <int id="1" val="0"/>
                                 </toggle-grav>
-                                <toggle-grav comment="false" x="83" y="272">
+                                <toggle-grav comment="false" x="63" y="582">
                                     <ACTOR eid="var" id="0" vid="11"/>
                                     <int id="1" val="0"/>
                                 </toggle-grav>
-                                <toggle-grav comment="false" x="83" y="299">
+                                <toggle-grav comment="false" x="63" y="609">
                                     <ACTOR eid="var" id="0" vid="12"/>
                                     <int id="1" val="0"/>
                                 </toggle-grav>
-                                <toggle-grav comment="false" x="83" y="326">
+                                <toggle-grav comment="false" x="63" y="636">
                                     <ACTOR eid="var" id="0" vid="4"/>
                                     <int id="1" val="0"/>
                                 </toggle-grav>
-                                <set-dxy comment="false" x="83" y="353">
+                                <set-dxy comment="false" x="63" y="663">
                                     <ACTOR eid="var" id="0" vid="3"/>
                                     <int id="1" val="0"/>
-                                    <int id="2" val="7"/>
+                                    <int id="2" val="5"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="380">
+                                <set-dxy comment="false" x="63" y="690">
                                     <ACTOR eid="var" id="0" vid="3"/>
                                     <int id="1" val="1"/>
-                                    <int id="2" val="-15"/>
+                                    <int id="2" val="-17"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="407">
+                                <set-dxy comment="false" x="63" y="717">
                                     <ACTOR eid="var" id="0" vid="11"/>
                                     <int id="1" val="0"/>
-                                    <int id="2" val="-10"/>
+                                    <int id="2" val="10"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="434">
+                                <set-dxy comment="false" x="63" y="744">
                                     <ACTOR eid="var" id="0" vid="11"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="-20"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="461">
+                                <set-dxy comment="false" x="63" y="771">
                                     <ACTOR eid="var" id="0" vid="12"/>
                                     <int id="1" val="0"/>
-                                    <int id="2" val="5"/>
+                                    <int id="2" val="-10"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="488">
+                                <set-dxy comment="false" x="63" y="798">
                                     <ACTOR eid="var" id="0" vid="12"/>
                                     <int id="1" val="1"/>
-                                    <int id="2" val="-15"/>
+                                    <int id="2" val="-10"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="515">
+                                <set-dxy comment="false" x="63" y="825">
                                     <ACTOR eid="var" id="0" vid="4"/>
                                     <int id="1" val="0"/>
-                                    <int id="2" val="7"/>
+                                    <int id="2" val="-20"/>
                                 </set-dxy>
-                                <set-dxy comment="false" x="83" y="542">
+                                <set-dxy comment="false" x="63" y="852">
                                     <ACTOR eid="var" id="0" vid="4"/>
                                     <int id="1" val="1"/>
                                     <int id="2" val="-20"/>
@@ -255,13 +557,13 @@
                                 </less>
                             </and>
                         </if>
-                        <stop comment="false" x="72" y="581"/>
+                        <stop comment="false" x="52" y="891"/>
                     </group>
                     <not comment="false" id="0" x="0" y="0">
                         <get-val-9-18 comment="false" id="0" x="0" y="0"/>
                     </not>
                 </if>
-                <set-val-9-1 comment="false" x="61" y="613">
+                <set-val-9-1 comment="false" x="41" y="923">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -273,7 +575,7 @@
                         </get-xy>
                     </minus>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="656">
+                <set-val-9-2 comment="false" x="41" y="966">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -285,25 +587,25 @@
                         </get-xy>
                     </minus>
                 </set-val-9-2>
-                <set-val-9-1 comment="false" x="61" y="699">
+                <set-val-9-1 comment="false" x="41" y="1009">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-1 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="729">
+                <set-val-9-2 comment="false" x="41" y="1039">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-2 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-2>
-                <set-val-9-8 comment="false" x="61" y="759">
+                <set-val-9-8 comment="false" x="41" y="1069">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </plus>
                 </set-val-9-8>
-                <set-val-9-1 comment="false" x="61" y="789">
+                <set-val-9-1 comment="false" x="41" y="1099">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -315,7 +617,7 @@
                         </get-xy>
                     </minus>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="827">
+                <set-val-9-2 comment="false" x="41" y="1137">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -327,25 +629,25 @@
                         </get-xy>
                     </minus>
                 </set-val-9-2>
-                <set-val-9-1 comment="false" x="61" y="865">
+                <set-val-9-1 comment="false" x="41" y="1175">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-1 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="895">
+                <set-val-9-2 comment="false" x="41" y="1205">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-2 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-2>
-                <set-val-9-13 comment="false" x="61" y="925">
+                <set-val-9-13 comment="false" x="41" y="1235">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </plus>
                 </set-val-9-13>
-                <set-val-9-1 comment="false" x="61" y="955">
+                <set-val-9-1 comment="false" x="41" y="1265">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -357,7 +659,7 @@
                         </get-xy>
                     </minus>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="993">
+                <set-val-9-2 comment="false" x="41" y="1303">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -369,25 +671,25 @@
                         </get-xy>
                     </minus>
                 </set-val-9-2>
-                <set-val-9-1 comment="false" x="61" y="1031">
+                <set-val-9-1 comment="false" x="41" y="1341">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-1 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="1061">
+                <set-val-9-2 comment="false" x="41" y="1371">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-2 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-2>
-                <set-val-9-14 comment="false" x="61" y="1091">
+                <set-val-9-14 comment="false" x="41" y="1401">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </plus>
                 </set-val-9-14>
-                <set-val-9-1 comment="false" x="61" y="1121">
+                <set-val-9-1 comment="false" x="41" y="1431">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -399,7 +701,7 @@
                         </get-xy>
                     </minus>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="1159">
+                <set-val-9-2 comment="false" x="41" y="1469">
                     <minus comment="false" id="0" x="0" y="0">
                         <mousexy comment="false" id="0" x="0" y="0">
                             <int id="0" val="0"/>
@@ -411,36 +713,36 @@
                         </get-xy>
                     </minus>
                 </set-val-9-2>
-                <set-val-9-1 comment="false" x="61" y="1197">
+                <set-val-9-1 comment="false" x="41" y="1507">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-1 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-1>
-                <set-val-9-2 comment="false" x="61" y="1227">
+                <set-val-9-2 comment="false" x="41" y="1537">
                     <times comment="false" id="0" x="0" y="0">
                         <get-val-9-2 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </times>
                 </set-val-9-2>
-                <set-val-9-10 comment="false" x="61" y="1257">
+                <set-val-9-10 comment="false" x="41" y="1567">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-9-1 comment="false" id="0" x="0" y="0"/>
                         <get-val-9-2 comment="false" id="1" x="0" y="0"/>
                     </plus>
                 </set-val-9-10>
-                <set-val-9-7 comment="false" x="61" y="1287">
+                <set-val-9-7 comment="false" x="41" y="1597">
                     <int id="0" val="99999"/>
                 </set-val-9-7>
-                <set-val-9-9 comment="false" x="61" y="1307">
+                <set-val-9-9 comment="false" x="41" y="1617">
                     <int id="0" val="0"/>
                 </set-val-9-9>
-                <if comment="false" x="61" y="1327">
+                <if comment="false" x="41" y="1637">
                     <group eventID="2" id="-1">
-                        <set-val-9-7 comment="false" x="72" y="1357">
+                        <set-val-9-7 comment="false" x="52" y="1667">
                             <get-val-9-8 comment="false" id="0" x="0" y="0"/>
                         </set-val-9-7>
-                        <set-val-9-9 comment="false" x="72" y="1382">
+                        <set-val-9-9 comment="false" x="52" y="1692">
                             <int id="0" val="1"/>
                         </set-val-9-9>
                     </group>
@@ -449,12 +751,12 @@
                         <get-val-9-7 comment="false" id="1" x="0" y="0"/>
                     </less>
                 </if>
-                <if comment="false" x="61" y="1414">
+                <if comment="false" x="41" y="1724">
                     <group eventID="2" id="-1">
-                        <set-val-9-7 comment="false" x="72" y="1444">
+                        <set-val-9-7 comment="false" x="52" y="1754">
                             <get-val-9-13 comment="false" id="0" x="0" y="0"/>
                         </set-val-9-7>
-                        <set-val-9-9 comment="false" x="72" y="1469">
+                        <set-val-9-9 comment="false" x="52" y="1779">
                             <int id="0" val="2"/>
                         </set-val-9-9>
                     </group>
@@ -463,12 +765,12 @@
                         <get-val-9-7 comment="false" id="1" x="0" y="0"/>
                     </less>
                 </if>
-                <if comment="false" x="61" y="1501">
+                <if comment="false" x="41" y="1811">
                     <group eventID="2" id="-1">
-                        <set-val-9-7 comment="false" x="72" y="1531">
+                        <set-val-9-7 comment="false" x="52" y="1841">
                             <get-val-9-14 comment="false" id="0" x="0" y="0"/>
                         </set-val-9-7>
-                        <set-val-9-9 comment="false" x="72" y="1556">
+                        <set-val-9-9 comment="false" x="52" y="1866">
                             <int id="0" val="3"/>
                         </set-val-9-9>
                     </group>
@@ -477,12 +779,12 @@
                         <get-val-9-7 comment="false" id="1" x="0" y="0"/>
                     </less>
                 </if>
-                <if comment="false" x="61" y="1588">
+                <if comment="false" x="41" y="1898">
                     <group eventID="2" id="-1">
-                        <set-val-9-7 comment="false" x="72" y="1618">
+                        <set-val-9-7 comment="false" x="52" y="1928">
                             <get-val-9-10 comment="false" id="0" x="0" y="0"/>
                         </set-val-9-7>
-                        <set-val-9-9 comment="false" x="72" y="1643">
+                        <set-val-9-9 comment="false" x="52" y="1953">
                             <int id="0" val="4"/>
                         </set-val-9-9>
                     </group>
@@ -491,9 +793,9 @@
                         <get-val-9-7 comment="false" id="1" x="0" y="0"/>
                     </less>
                 </if>
-                <if comment="false" x="61" y="1675">
+                <if comment="false" x="41" y="1985">
                     <group eventID="2" id="-1">
-                        <set-val-9-9 comment="false" x="72" y="1705">
+                        <set-val-9-9 comment="false" x="52" y="2015">
                             <int id="0" val="0"/>
                         </set-val-9-9>
                     </group>
@@ -502,49 +804,60 @@
                         <int id="1" val="200"/>
                     </more>
                 </if>
-                <if comment="false" x="61" y="1737">
+                <if comment="false" x="41" y="2047">
                     <group eventID="2" id="-1">
-                        <set-fric-bounce comment="false" x="72" y="1767">
+                        <set-val-9-9 comment="false" x="52" y="2077">
+                            <int id="0" val="0"/>
+                        </set-val-9-9>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-9-5 comment="false" id="0" x="0" y="0"/>
+                        <get-val-9-9 comment="false" id="1" x="0" y="0"/>
+                    </eq>
+                </if>
+                <if comment="false" x="41" y="2109">
+                    <group eventID="2" id="-1">
+                        <set-fric-bounce comment="false" x="52" y="2139">
                             <ACTOR eid="var" id="0" vid="3"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.1"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1794">
+                        <set-fric-bounce comment="false" x="52" y="2166">
                             <ACTOR eid="var" id="0" vid="11"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.1"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1821">
+                        <set-fric-bounce comment="false" x="52" y="2193">
                             <ACTOR eid="var" id="0" vid="12"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.1"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1848">
+                        <set-fric-bounce comment="false" x="52" y="2220">
                             <ACTOR eid="var" id="0" vid="4"/>
                             <int id="1" val="0"/>
                             <int id="2" val="0.1"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1875">
+                        <set-fric-bounce comment="false" x="52" y="2247">
                             <ACTOR eid="var" id="0" vid="3"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1902">
+                        <set-fric-bounce comment="false" x="52" y="2274">
                             <ACTOR eid="var" id="0" vid="11"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1929">
+                        <set-fric-bounce comment="false" x="52" y="2301">
                             <ACTOR eid="var" id="0" vid="12"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                         </set-fric-bounce>
-                        <set-fric-bounce comment="false" x="72" y="1956">
+                        <set-fric-bounce comment="false" x="52" y="2328">
                             <ACTOR eid="var" id="0" vid="4"/>
                             <int id="1" val="1"/>
                             <int id="2" val="0"/>
                         </set-fric-bounce>
-                        <set-val-9-5 comment="false" x="72" y="1983">
+                        <set-val-9-5 comment="false" x="52" y="2355">
                             <get-val-9-9 comment="false" id="0" x="0" y="0"/>
                         </set-val-9-5>
                     </group>
@@ -553,9 +866,9 @@
                         <int id="1" val="0"/>
                     </noteq>
                 </if>
-                <else-if comment="false" x="61" y="2020">
+                <else-if comment="false" x="41" y="2392">
                     <group eventID="2" id="-1">
-                        <say comment="false" x="72" y="2050">
+                        <say comment="false" x="52" y="2422">
                             <ACTOR eid="var" id="0" vid="3"/>
                             <int id="1" val="controlp"/>
                             <int id="2" val="input_start"/>
@@ -566,9 +879,9 @@
                         <int id="1" val="1"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="61" y="2089">
+                <else-if comment="false" x="41" y="2461">
                     <group eventID="2" id="-1">
-                        <say comment="false" x="72" y="2119">
+                        <say comment="false" x="52" y="2491">
                             <ACTOR eid="var" id="0" vid="11"/>
                             <int id="1" val="controll"/>
                             <int id="2" val="input_start"/>
@@ -579,9 +892,9 @@
                         <int id="1" val="2"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="61" y="2158">
+                <else-if comment="false" x="41" y="2530">
                     <group eventID="2" id="-1">
-                        <say comment="false" x="72" y="2188">
+                        <say comment="false" x="52" y="2560">
                             <ACTOR eid="var" id="0" vid="12"/>
                             <int id="1" val="controla"/>
                             <int id="2" val="input_start"/>
@@ -592,9 +905,9 @@
                         <int id="1" val="3"/>
                     </eq>
                 </else-if>
-                <else-if comment="false" x="61" y="2227">
+                <else-if comment="false" x="41" y="2599">
                     <group eventID="2" id="-1">
-                        <say comment="false" x="72" y="2257">
+                        <say comment="false" x="52" y="2629">
                             <ACTOR eid="var" id="0" vid="4"/>
                             <int id="1" val="controly"/>
                             <int id="2" val="input_start"/>
@@ -760,4 +1073,254 @@
         </step>
     </group>
     <group eventID="3" id="-1"/>
+    <group eventID="10" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="25"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <true comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="11"/>
+        </event-actor-region>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="24"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <true comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="3"/>
+        </event-actor-region>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="24"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="3"/>
+        </event-actor-region>
+    </group>
+    <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="25"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="11"/>
+        </event-actor-region>
+    </group>
+    <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="26"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <true comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="12"/>
+        </event-actor-region>
+    </group>
+    <group eventID="14" id="-1"/>
+    <group eventID="15" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="26"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="12"/>
+        </event-actor-region>
+    </group>
+    <group eventID="15" id="-1"/>
+    <group eventID="17" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="17" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="27"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <false comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="1"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="4"/>
+        </event-actor-region>
+    </group>
+    <group eventID="17" id="-1"/>
+    <group eventID="16" id="0">
+        <event-actor-region comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <set-attribute comment="false" x="26" y="42">
+                    <ACTOR eid="var" id="0" vid="27"/>
+                    <int id="1" val="panel"/>
+                    <int id="2" val="_opened"/>
+                    <true comment="false" id="3" x="0" y="0"/>
+                </set-attribute>
+                <custom-41 comment="false" x="26" y="74"/>
+            </group>
+            <int id="0" val="0"/>
+            <REGION eid="var" id="1" vid="23"/>
+            <ACTOR eid="var" id="2" vid="4"/>
+        </event-actor-region>
+    </group>
+    <group eventID="16" id="-1"/>
+    <group eventID="19" id="0">
+        <receiver-4-41 comment="false" x="15" y="15">
+            <group eventID="19" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="19" id="-1">
+                        <set-val-9-28 comment="false" x="37" y="65">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </set-val-9-28>
+                        <fadeInOut comment="false" x="37" y="90">
+                            <ACTOR eid="var" id="0" vid="3"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="37" y="117">
+                            <ACTOR eid="var" id="0" vid="11"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="37" y="144">
+                            <ACTOR eid="var" id="0" vid="12"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="37" y="171">
+                            <ACTOR eid="var" id="0" vid="4"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="37" y="198">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <int id="1" val="controly"/>
+                                <int id="2" val="_mid"/>
+                            </get-attribute>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                        <fadeInOut comment="false" x="37" y="238">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="4"/>
+                                <int id="1" val="controly"/>
+                                <int id="2" val="_top"/>
+                            </get-attribute>
+                            <int id="1" val="1"/>
+                            <int id="2" val="1"/>
+                            <int id="3" val="11"/>
+                        </fadeInOut>
+                    </group>
+                    <custom-39 comment="false" id="0" x="0" y="0"/>
+                </if>
+            </group>
+        </receiver-4-41>
+    </group>
+    <group eventID="19" id="-1"/>
+    <group eventID="18" id="0">
+        <receiver-2-39 comment="false" x="72" y="38">
+            <group eventID="18" id="-1">
+                <if comment="false" x="83" y="63">
+                    <group eventID="18" id="-1">
+                        <return comment="false" x="94" y="101">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </return>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="24"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                        </get-attribute>
+                    </not>
+                </if>
+                <if comment="false" x="83" y="138">
+                    <group eventID="18" id="-1">
+                        <return comment="false" x="94" y="171">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </return>
+                    </group>
+                    <get-attribute comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="25"/>
+                        <int id="1" val="panel"/>
+                        <int id="2" val="_opened"/>
+                    </get-attribute>
+                </if>
+                <if comment="false" x="83" y="208">
+                    <group eventID="18" id="-1">
+                        <return comment="false" x="94" y="246">
+                            <false comment="false" id="0" x="0" y="0"/>
+                        </return>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="26"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                        </get-attribute>
+                    </not>
+                </if>
+                <return comment="false" x="83" y="283">
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="27"/>
+                            <int id="1" val="panel"/>
+                            <int id="2" val="_opened"/>
+                        </get-attribute>
+                    </not>
+                </return>
+            </group>
+        </receiver-2-39>
+    </group>
+    <group eventID="18" id="-1"/>
 </groups>

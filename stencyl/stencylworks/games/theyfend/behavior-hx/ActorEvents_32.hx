@@ -62,99 +62,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class Design_18_18_fly extends ActorScript
+class ActorEvents_32 extends ActorScript
 {          	
 	
-public var _flying:Bool;
-
-public var _right:Bool;
-
-public var _timeout:Float;
-
-public var _tmp:Float;
-    
-/* ========================= Custom Event ========================= */
-public function _customEvent_fly_away():Void
-{
-        if(!(_flying))
-{
-            _flying = true;
-propertyChanged("_flying", _flying);
-            if(_right)
-{
-                actor.setAnimation("" + ("" + "flyl"));
-                actor.moveTo(100, 10, 1, Quad.easeInOut);
-                runLater(1000 * 1, function(timeTask:TimedTask):Void {
-                            _flying = false;
-propertyChanged("_flying", _flying);
-                            _right = false;
-propertyChanged("_right", _right);
-}, actor);
-}
-
-            else
-{
-                actor.setAnimation("" + ("" + "flyr"));
-                actor.moveTo(660, 60, 1, Quad.easeInOut);
-                runLater(1000 * 1, function(timeTask:TimedTask):Void {
-                            _flying = false;
-propertyChanged("_flying", _flying);
-                            _right = true;
-propertyChanged("_right", _right);
-}, actor);
-}
-
-}
-
-}
-
-
  
  	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
 		super(actor, engine);	
-		nameMap.set("flying", "_flying");
-_flying = false;
-nameMap.set("right", "_right");
-_right = true;
-nameMap.set("timeout", "_timeout");
-_timeout = 0;
-nameMap.set("tmp", "_tmp");
-_tmp = 0;
-nameMap.set("Actor", "actor");
-
+		
 	}
 	
 	override public function init()
 	{
-		    
-/* ========================= Type & Type ========================== */
-addSceneCollisionListener(getActorType(24).ID, getActorType(13).ID, function(event:Collision, list:Array<Dynamic>):Void {
-if(wrapper.enabled){
-        actor.shout("_customEvent_" + "fly_away");
-}
-});
-    
-/* ======================== When Updating ========================= */
-addWhenUpdatedListener(null, function(elapsedTime:Float, list:Array<Dynamic>):Void {
-if(wrapper.enabled){
-        if(!(_flying))
-{
-            if((actor.getXCenter() < getValueForScene("main", "_lettera").getXCenter()))
-{
-                actor.setAnimation("" + ("" + "idler"));
-}
-
-            else
-{
-                actor.setAnimation("" + ("" + "idlel"));
-}
-
-}
-
-}
-});
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)
