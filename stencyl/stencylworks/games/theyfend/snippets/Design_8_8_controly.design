@@ -72,14 +72,14 @@
                                             <code-short comment="false" id="0" x="0" y="0">
                                                 <int id="0" val="elapsedTime"/>
                                             </code-short>
-                                            <int id="1" val="0.1"/>
+                                            <int id="1" val="0.15"/>
                                         </times>
                                     </plus>
                                 </set-val-8-5>
                             </group>
                             <less comment="false" id="0" x="0" y="0">
                                 <get-val-8-5 comment="false" id="0" x="0" y="0"/>
-                                <int id="1" val="200"/>
+                                <int id="1" val="350"/>
                             </less>
                         </if>
                     </group>
@@ -94,7 +94,7 @@
                                     <code-short comment="false" id="0" x="0" y="0">
                                         <int id="0" val="elapsedTime"/>
                                     </code-short>
-                                    <int id="1" val="0.2"/>
+                                    <int id="1" val="0.25"/>
                                 </times>
                             </minus>
                         </set-val-8-5>
@@ -126,7 +126,7 @@
                         <minus comment="false" id="0" x="0" y="0">
                             <get-xy comment="false" id="0" x="0" y="0">
                                 <ACTOR eid="this" id="0"/>
-                                <int id="1" val="1"/>
+                                <int id="1" val="3"/>
                             </get-xy>
                             <int id="1" val="12"/>
                         </minus>
@@ -144,7 +144,7 @@
                 <set-val-8-4 comment="false" x="161" y="410">
                     <plus comment="false" id="0" x="0" y="0">
                         <get-val-8-5 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="12"/>
+                        <int id="1" val="0"/>
                     </plus>
                 </set-val-8-4>
                 <set-xy comment="false" x="161" y="440">
@@ -153,21 +153,24 @@
                     <minus comment="false" id="2" x="0" y="0">
                         <get-xy comment="false" id="0" x="0" y="0">
                             <ACTOR eid="this" id="0"/>
-                            <int id="1" val="1"/>
+                            <int id="1" val="3"/>
                         </get-xy>
-                        <times comment="false" id="1" x="0" y="0">
-                            <int id="0" val="0.5"/>
-                            <get-val-8-4 comment="false" id="1" x="0" y="0"/>
-                        </times>
+                        <plus comment="false" id="1" x="0" y="0">
+                            <int id="0" val="12"/>
+                            <times comment="false" id="1" x="0" y="0">
+                                <int id="0" val="0.5"/>
+                                <get-val-8-4 comment="false" id="1" x="0" y="0"/>
+                            </times>
+                        </plus>
                     </minus>
                 </set-xy>
-                <set-val-8-4 comment="false" x="161" y="485">
+                <set-val-8-4 comment="false" x="161" y="487">
                     <div comment="false" id="0" x="0" y="0">
                         <get-val-8-4 comment="false" id="0" x="0" y="0"/>
-                        <int id="1" val="12"/>
+                        <int id="1" val="24"/>
                     </div>
                 </set-val-8-4>
-                <custom-code comment="false" x="161" y="515">
+                <custom-code comment="false" x="161" y="517">
                     <int id="0" val="_mid.realScaleY = _tmp;"/>
                 </custom-code>
             </group>

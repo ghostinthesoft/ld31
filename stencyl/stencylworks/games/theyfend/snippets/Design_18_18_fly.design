@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <event-collide-typetotype comment="false" x="38" y="22">
+            <group eventID="2" id="-1">
+                <shout comment="false" x="49" y="54">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="fly_away"/>
+                </shout>
+            </group>
+            <ACTORTYPE eid="24" id="0"/>
+            <ACTORTYPE eid="13" id="1"/>
+        </event-collide-typetotype>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="14" y="26">
+            <group eventID="3" id="-1">
+                <if comment="false" x="25" y="51">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="36" y="81">
+                            <group eventID="3" id="-1">
+                                <setanim comment="false" x="47" y="124">
+                                    <ACTOR eid="this" id="0"/>
+                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="idler"/>
+                                    </string-to-anim>
+                                </setanim>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="main"/>
+                                        <int id="1" val="_lettera"/>
+                                    </scene-get-attribute>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                            </less>
+                        </if>
+                        <else comment="false" x="36" y="168">
+                            <group eventID="3" id="-1">
+                                <setanim comment="false" x="47" y="188">
+                                    <ACTOR eid="this" id="0"/>
+                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="idlel"/>
+                                    </string-to-anim>
+                                </setanim>
+                            </group>
+                        </else>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-18-1 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <event-mouse-enter-exit-actor comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <shout comment="false" x="26" y="42">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="fly_away"/>
+                </shout>
+            </group>
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val="2"/>
+        </event-mouse-enter-exit-actor>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-val-18-1 comment="false" x="37" y="70">
+                            <true comment="false" id="0" x="0" y="0"/>
+                        </set-val-18-1>
+                        <if comment="false" x="37" y="95">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="120">
+                                    <ACTOR eid="this" id="0"/>
+                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="flyl"/>
+                                    </string-to-anim>
+                                </setanim>
+                                <moveToBy comment="false" x="48" y="152">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="100"/>
+                                    <int id="3" val="10"/>
+                                    <int id="4" val="1"/>
+                                    <int id="5" val="8"/>
+                                </moveToBy>
+                                <dolater comment="false" x="48" y="179">
+                                    <group eventID="2" id="-1">
+                                        <set-val-18-1 comment="false" x="59" y="206">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-18-1>
+                                        <set-val-18-2 comment="false" x="59" y="231">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-18-2>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                            <get-val-18-2 comment="false" id="0" x="0" y="0"/>
+                        </if>
+                        <else comment="false" x="37" y="280">
+                            <group eventID="2" id="-1">
+                                <setanim comment="false" x="48" y="300">
+                                    <ACTOR eid="this" id="0"/>
+                                    <string-to-anim comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="flyr"/>
+                                    </string-to-anim>
+                                </setanim>
+                                <moveToBy comment="false" x="48" y="332">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="1"/>
+                                    <int id="2" val="660"/>
+                                    <int id="3" val="60"/>
+                                    <int id="4" val="1"/>
+                                    <int id="5" val="8"/>
+                                </moveToBy>
+                                <dolater comment="false" x="48" y="359">
+                                    <group eventID="2" id="-1">
+                                        <set-val-18-1 comment="false" x="59" y="386">
+                                            <false comment="false" id="0" x="0" y="0"/>
+                                        </set-val-18-1>
+                                        <set-val-18-2 comment="false" x="59" y="411">
+                                            <true comment="false" id="0" x="0" y="0"/>
+                                        </set-val-18-2>
+                                    </group>
+                                    <int id="0" val="1"/>
+                                    <ACTOR eid="this" id="2"/>
+                                </dolater>
+                            </group>
+                        </else>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <get-val-18-1 comment="false" id="0" x="0" y="0"/>
+                    </not>
+                </if>
+            </group>
+            <int id="0" val="fly_away"/>
+        </event-custom>
+    </group>
+    <group eventID="6" id="-1"/>
+</groups>
