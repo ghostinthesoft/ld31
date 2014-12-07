@@ -147,10 +147,6 @@
         <blocks/>
         <events/>
     </snippet>
-    <snippet attachedevent="true" class="scripts.ActorEvents_21" classname="scripts.ActorEvents_21" desc="Actor Specific Events" description="Actor Specific Events" design="true" drawOrder="0" id="14" language="" name="ActorEvents_21" oid="-1" package="scripts." scenespecific="false" shared="false" type="actor">
-        <blocks/>
-        <events/>
-    </snippet>
     <snippet attachedevent="false" class="scripts.Design_15_15_controla" classname="scripts.Design_15_15_controla" desc="" description="" design="true" drawOrder="0" id="15" language="" name="controla" oid="-1" package="scripts" scenespecific="false" shared="false" type="actor">
         <boolean default="false" defaultValue="false" desc="" dropdown="" fullname="right" hidden="true" id="1" name="_right" order="1"/>
         <number default="0.0" defaultValue="0.0" desc="" dropdown="" fullname="dir" hidden="true" id="2" name="_dir" order="2"/>

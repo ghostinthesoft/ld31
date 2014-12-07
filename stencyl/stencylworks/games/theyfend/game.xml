@@ -70,7 +70,7 @@
         <poly id="20" name="Tri 60-2R Inv" pts="0.0,0.0#0.5,1.0#1.0,1.0#1.0,0.0"/>
     </collisions>
     <atlases>
-        <atlas dirty="true" id="0" members="0,11,13,15,17,19,21,24,26,28,30,32,34,36,3,23," name="Main Atlas" pvr="false" resize="0" start="true" target="0"/>
+        <atlas dirty="true" id="0" members="0,11,13,15,17,19,24,26,28,30,32,34,36,3,23,42,43,44,45,46,47,48,49,50," name="Main Atlas" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="1" members="" name="Atlas 2" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="2" members="" name="Atlas 3" pvr="false" resize="0" start="true" target="0"/>
         <atlas dirty="true" id="3" members="" name="Atlas 4" pvr="false" resize="0" start="true" target="0"/>
