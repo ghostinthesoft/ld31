@@ -18,15 +18,7 @@
             <group eventID="3" id="-1">
                 <if comment="false" x="25" y="51">
                     <group eventID="3" id="-1">
-                        <if comment="false" x="36" y="81">
-                            <group eventID="3" id="-1">
-                                <setanim comment="false" x="47" y="124">
-                                    <ACTOR eid="this" id="0"/>
-                                    <string-to-anim comment="false" id="1" x="0" y="0">
-                                        <int id="0" val="idler"/>
-                                    </string-to-anim>
-                                </setanim>
-                            </group>
+                        <set-val-18-7 comment="false" x="36" y="81">
                             <less comment="false" id="0" x="0" y="0">
                                 <get-xy comment="false" id="0" x="0" y="0">
                                     <ACTOR eid="this" id="0"/>
@@ -40,15 +32,63 @@
                                     <int id="1" val="2"/>
                                 </get-xy>
                             </less>
-                        </if>
-                        <else comment="false" x="36" y="168">
+                        </set-val-18-7>
+                        <if comment="false" x="36" y="124">
                             <group eventID="3" id="-1">
-                                <setanim comment="false" x="47" y="188">
-                                    <ACTOR eid="this" id="0"/>
-                                    <string-to-anim comment="false" id="1" x="0" y="0">
-                                        <int id="0" val="idlel"/>
-                                    </string-to-anim>
-                                </setanim>
+                                <if comment="false" x="47" y="162">
+                                    <group eventID="3" id="-1">
+                                        <setanim comment="false" x="58" y="187">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="whoor"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                    </group>
+                                    <get-val-18-7 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="47" y="231">
+                                    <group eventID="3" id="-1">
+                                        <setanim comment="false" x="58" y="251">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="whool"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                    </group>
+                                </else>
+                            </group>
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <scene-get-attribute comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="main"/>
+                                    <int id="1" val="_lettera"/>
+                                </scene-get-attribute>
+                                <int id="1" val="controla"/>
+                                <int id="2" val="_jumping"/>
+                            </get-attribute>
+                        </if>
+                        <else comment="false" x="36" y="307">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="47" y="327">
+                                    <group eventID="3" id="-1">
+                                        <setanim comment="false" x="58" y="352">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="idler"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                    </group>
+                                    <get-val-18-7 comment="false" id="0" x="0" y="0"/>
+                                </if>
+                                <else comment="false" x="47" y="396">
+                                    <group eventID="3" id="-1">
+                                        <setanim comment="false" x="58" y="416">
+                                            <ACTOR eid="this" id="0"/>
+                                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="idlel"/>
+                                            </string-to-anim>
+                                        </setanim>
+                                    </group>
+                                </else>
                             </group>
                         </else>
                     </group>
@@ -128,7 +168,7 @@
                                 <moveToBy comment="false" x="48" y="359">
                                     <ACTOR eid="this" id="0"/>
                                     <int id="1" val="1"/>
-                                    <int id="2" val="660"/>
+                                    <int id="2" val="620"/>
                                     <int id="3" val="60"/>
                                     <int id="4" val="1"/>
                                     <int id="5" val="8"/>

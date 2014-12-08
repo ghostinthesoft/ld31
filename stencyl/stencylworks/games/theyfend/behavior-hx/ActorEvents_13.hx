@@ -62,26 +62,19 @@ import com.stencyl.graphics.shaders.BloomShader;
 
 
 
-class SceneEvents_0 extends SceneScript
+class ActorEvents_13 extends ActorScript
 {          	
 	
  
- 	public function new(dummy:Int, engine:Engine)
+ 	public function new(dummy:Int, actor:Actor, engine:Engine)
 	{
-		super(engine);
+		super(actor, engine);	
 		
 	}
 	
 	override public function init()
 	{
-		    
-/* =========================== Keyboard =========================== */
-addKeyStateListener("reload", function(pressed:Bool, released:Bool, list:Array<Dynamic>):Void {
-if(wrapper.enabled && pressed){
-        reloadCurrentScene(createFadeOut((1)),createFadeIn((1)));
-}
-});
-
+		
 	}	      	
 	
 	override public function forwardMessage(msg:String)

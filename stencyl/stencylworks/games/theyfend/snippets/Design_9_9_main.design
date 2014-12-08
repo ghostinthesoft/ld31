@@ -41,7 +41,7 @@
                 </set-val-9-23>
                 <create-actor3 comment="false" x="152" y="205">
                     <ACTORTYPE eid="24" id="0"/>
-                    <int id="1" val="600"/>
+                    <int id="1" val="620"/>
                     <int id="2" val="60"/>
                     <int id="3" val="0"/>
                 </create-actor3>
@@ -254,7 +254,7 @@
                 <if comment="false" x="152" y="1195">
                     <group eventID="1" id="-1">
                         <set-val-9-29 comment="false" x="163" y="1220">
-                            <int id="0" val="100"/>
+                            <int id="0" val="4"/>
                         </set-val-9-29>
                         <set-game-val-0 comment="false" x="163" y="1240">
                             <false comment="false" id="0" x="0" y="0"/>
@@ -379,11 +379,7 @@
             </group>
         </init>
     </group>
-    <group eventID="1" id="-1">
-        <get-game-att comment="false" x="617" y="655">
-            <int id="0" val=""/>
-        </get-game-att>
-    </group>
+    <group eventID="1" id="-1"/>
     <group eventID="2" id="0">
         <event-mouse-press-release comment="false" x="30" y="20">
             <group eventID="2" id="-1">
